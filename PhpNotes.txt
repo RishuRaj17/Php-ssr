@@ -1,0 +1,22 @@
+# - single line comment.
+
+print , echo
+
+. - concatination;
+
+const -> not defined globally, defined during compile time.
+
+define("variable_name","variable_value") -> globally defined , defined during run time.
+
+var_dump() - check variable type
+
+<?php?>
+
+terminal comands:
+
+Start mysql and apache - /xampp/xampp_start.exe
+Stop mysql and apache - /xampp/xampp_stop.exe
+Start apache - /xampp/apache_start.bat or apache_stop.bat
+Start mysql - /xampp/mysql_start.bat or mysql_stop.bat
+
+run file : php artisan serve
