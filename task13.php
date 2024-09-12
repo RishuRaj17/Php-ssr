@@ -4,7 +4,6 @@
 
     ksort($arr);
 
-
     foreach($arr as $x => $x_value){
         echo "key=".$x.", value".$x_value;
         echo "<br>";
