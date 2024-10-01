@@ -1,7 +1,6 @@
 <?php
 
-setcookie("user",)
-
+if(isset($_post['user']))
 ?>
 
 <html>
