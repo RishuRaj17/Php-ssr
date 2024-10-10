@@ -9,7 +9,5 @@ $var = 9950;
  }else{
     echo "Integer is not Valid";
  }
-
-
-
+ 
 ?>
