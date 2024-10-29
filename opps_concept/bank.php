@@ -41,20 +41,22 @@ class BankAccount {
         echo "Available balance: " . $this->balance . " Rs ONLY!";
     }
 
-     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $amount = (int)$_POST["amount"];
-        $action = $_POST["action"];
-
-        if ($action == "deposit") {
-            $acc->deposit($amount);
-        } elseif ($action == "withdraw") {
-            $acc->withdraw($amount);
-        }
-    }
+     
 }
 
 $acc = new BankAccount();
 $acc->getBalance();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $amount = (int)$_POST["amount"];
+    $action = $_POST["action"];
+
+    if ($action == "deposit") {
+        $acc->deposit($amount);
+    } elseif ($action == "withdraw") {
+        $acc->withdraw($amount);
+    }
+}
 
 ?>
 
